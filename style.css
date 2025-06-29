@@ -3,3 +3,8 @@
   src: url(fonts/norse-bold-webfont.woff2),
   url(fonts/norse-bold-webfont.woff);
 }
+
+:root {
+  --border-clr: #E5E7EB;
+  --btn-bg-clr: #596D48;
+}
