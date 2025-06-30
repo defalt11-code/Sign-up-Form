@@ -101,10 +101,10 @@ form h1 {
   margin-bottom: 20px;
 }
 
-form div {
+/* form div {
   display: flex;
   flex-direction: column;
-}
+} */
 
 input {
   font-size: 1rem;
