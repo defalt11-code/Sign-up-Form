@@ -34,19 +34,41 @@
             <h1>Let's do this!</h1>
             <li>
               <label for="first-name">FIRST NAME</label>
-              <input type="text" id="first-name" name="firstName" />
+              <input
+                type="text"
+                id="first-name"
+                name="firstName"
+                placeholder="John"
+              />
             </li>
             <li>
               <label for="last-name">LAST NAME</label>
-              <input type="text" id="last-name" name="lastName" />
+              <input
+                type="text"
+                id="last-name"
+                name="lastName"
+                placeholder="smith"
+              />
             </li>
             <li>
               <label for="email">EMAIL</label>
-              <input type="email" name="email" id="email" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="joe@example.com"
+              />
             </li>
             <li>
               <label for="phone-number">PHONE NUMBER</label>
-              <input type="tel" name="tel" id="tel" required />
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                pattern="\d*"
+                title="Numbers only"
+                required
+              />
             </li>
             <li>
               <label for="password">PASSWORD</label>
@@ -68,5 +90,10 @@
         </form>
       </section>
     </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".wrapper").classList.add("animate");
+      });
+    </script>
   </body>
 </html>
