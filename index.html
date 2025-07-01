@@ -30,59 +30,61 @@
           <p>You <em>know</em> you want to.</p>
         </div>
         <form action="">
-          <ul>
+          <div class="inner-form-container">
             <h1>Let's do this!</h1>
-            <li>
-              <label for="first-name">FIRST NAME</label>
-              <input
-                type="text"
-                id="first-name"
-                name="firstName"
-                placeholder="John"
-              />
-            </li>
-            <li>
-              <label for="last-name">LAST NAME</label>
-              <input
-                type="text"
-                id="last-name"
-                name="lastName"
-                placeholder="smith"
-              />
-            </li>
-            <li>
-              <label for="email">EMAIL</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="joe@example.com"
-              />
-            </li>
-            <li>
-              <label for="phone-number">PHONE NUMBER</label>
-              <input
-                type="tel"
-                name="tel"
-                id="tel"
-                pattern="\d*"
-                title="Numbers only"
-                required
-              />
-            </li>
-            <li>
-              <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" />
-            </li>
-            <li>
-              <label for="confirm-password">CONFIRM PASSWORD</label>
-              <input
-                type="password"
-                name="confirm-password"
-                id="confirm-password"
-              />
-            </li>
-          </ul>
+            <fieldset>
+              <div>
+                <label for="first-name">FIRST NAME</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="firstName"
+                  placeholder="John"
+                />
+              </div>
+              <div>
+                <label for="last-name">LAST NAME</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="lastName"
+                  placeholder="smith"
+                />
+              </div>
+              <div>
+                <label for="email">EMAIL</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="joe@example.com"
+                />
+              </div>
+              <div>
+                <label for="phone-number">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  pattern="\d*"
+                  title="Numbers only"
+                  required
+                />
+              </div>
+              <div>
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" />
+              </div>
+              <div>
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                />
+              </div>
+            </fieldset>
+          </div>
           <div>
             <button type="submit">Create Account</button>
             <p>Already have an account?<a href="">Log in</a></p>

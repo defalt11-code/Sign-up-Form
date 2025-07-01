@@ -19,6 +19,7 @@
 
 body {
   min-height: var(--body-height);
+  overflow: hidden;
   /* margin: 10px; */
   font-family: roboto, sans-serif;
 }
@@ -52,7 +53,7 @@ body {
   height: var(--body-height);
   width: min(85rem, 100%);
   margin-inline: auto;
-  box-shadow: 0 0 10px black;
+  box-shadow: -1px 1px 10px black;
   opacity: 0;
   transform: scale(0.95);
   transition: all 0.5s ease-in, transform 0.6s ease;
@@ -67,7 +68,7 @@ body {
   background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 800px;
+  width: 600px;
   /* border: 1px solid blue; */
 }
 
@@ -87,7 +88,7 @@ img {
 
 #left-container h1 {
   font-family: "norse";
-  font-size: 6rem;
+  font-size: 5.55rem;
   color: white;
 }
 
@@ -117,43 +118,36 @@ img {
 }
 
 form h1 {
-  margin-left: 50px;
-}
-
-form h1 {
   display: block;
   width: 100%;
   flex-shrink: 0;
   margin-bottom: 20px;
 }
 
-/* form div {
-  display: flex;
-  flex-direction: column;
-} */
-
 ul {
   display: flex;
   flex-wrap: wrap;
 
   margin-top: 50px;
+  padding-inline: 50px;
   background-color: white;
   box-shadow: 0px 5px 5px rgb(202, 202, 202);
   padding-block: 20px;
-  padding-right: 100px;
 }
 
 li {
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin-left: 50px;
+  border: 1px solid blue;
+  width: 100%;
 }
 
 input {
   font-size: 0.95rem;
   /* padding-block: 0.25em; */
-  height: 30px;
+  height: 40px;
+  width: 100%;
   padding-inline: 0.45em;
   margin-bottom: 30px;
   border: 1px solid var(--border-clr);
@@ -202,4 +196,14 @@ form div p > a {
   font-weight: 600;
   margin-left: 5px;
   color: var(--btn-bg-clr);
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    overflow-y: visible;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
 }
