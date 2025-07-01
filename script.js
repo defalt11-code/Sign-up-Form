@@ -11,7 +11,7 @@ const form = document.querySelector("form");
 console.log(confirmPassword);
 
 form.addEventListener("submit", (e) => {
-  if (password.value !== confirmPassword.value &&) {
+  if (password.value !== confirmPassword.value) {
     e.preventDefault();
     confirmPassword.setCustomValidity("Passwords do not match");
     confirmPassword.reportValidity();
