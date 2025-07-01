@@ -31,57 +31,62 @@
         </div>
         <form action="">
           <div class="inner-form-container">
-            <h1>Let's do this!</h1>
             <fieldset>
-              <div>
-                <label for="first-name">FIRST NAME</label>
-                <input
-                  type="text"
-                  id="first-name"
-                  name="firstName"
-                  placeholder="John"
-                />
+              <h1>Let's do this!</h1>
+              <div class="form-column">
+                <div>
+                  <label for="first-name">FIRST NAME</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="firstName"
+                    placeholder="John"
+                  />
+                </div>
+                <div>
+                  <label for="email">EMAIL</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="joe@example.com"
+                  />
+                </div>
+                <div>
+                  <label for="password">PASSWORD</label>
+                  <input type="password" name="password" id="password" />
+                </div>
               </div>
-              <div>
-                <label for="last-name">LAST NAME</label>
-                <input
-                  type="text"
-                  id="last-name"
-                  name="lastName"
-                  placeholder="smith"
-                />
-              </div>
-              <div>
-                <label for="email">EMAIL</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="joe@example.com"
-                />
-              </div>
-              <div>
-                <label for="phone-number">PHONE NUMBER</label>
-                <input
-                  type="tel"
-                  name="tel"
-                  id="tel"
-                  pattern="\d*"
-                  title="Numbers only"
-                  required
-                />
-              </div>
-              <div>
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" />
-              </div>
-              <div>
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input
-                  type="password"
-                  name="confirm-password"
-                  id="confirm-password"
-                />
+              <div class="form-column">
+                <div>
+                  <label for="last-name">LAST NAME</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="lastName"
+                    placeholder="smith"
+                  />
+                </div>
+
+                <div>
+                  <label for="phone-number">PHONE NUMBER</label>
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    pattern="\d*"
+                    title="Numbers only"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="confirm-password">CONFIRM PASSWORD</label>
+                  <input
+                    type="password"
+                    name="confirm-password"
+                    id="confirm-password"
+                  />
+                </div>
               </div>
             </fieldset>
           </div>
