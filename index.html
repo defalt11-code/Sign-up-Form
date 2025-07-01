@@ -35,8 +35,9 @@
               <h1>Let's do this!</h1>
               <div class="form-column">
                 <div>
-                  <label for="first-name">FIRST NAME</label>
+                  <label for="first-name">*FIRST NAME</label>
                   <input
+                    required
                     type="text"
                     id="first-name"
                     name="firstName"
@@ -53,23 +54,29 @@
                   />
                 </div>
                 <div>
-                  <label for="password">PASSWORD</label>
-                  <input type="password" name="password" id="password" />
+                  <label for="password">*PASSWORD</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                  />
                 </div>
               </div>
               <div class="form-column">
                 <div>
-                  <label for="last-name">LAST NAME</label>
+                  <label for="last-name">*LAST NAME</label>
                   <input
                     type="text"
                     id="last-name"
                     name="lastName"
                     placeholder="smith"
+                    required
                   />
                 </div>
 
                 <div>
-                  <label for="phone-number">PHONE NUMBER</label>
+                  <label for="phone-number">*PHONE NUMBER</label>
                   <input
                     type="tel"
                     name="tel"
@@ -80,7 +87,7 @@
                   />
                 </div>
                 <div>
-                  <label for="confirm-password">CONFIRM PASSWORD</label>
+                  <label for="confirm-password">*CONFIRM PASSWORD</label>
                   <input
                     type="password"
                     name="confirm-password"

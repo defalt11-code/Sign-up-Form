@@ -177,6 +177,10 @@ input:focus:invalid {
   border-color: red;
 }
 
+.invalid {
+  border-color: red;
+}
+
 label {
   font-size: 0.75rem;
   font-weight: 500;
@@ -195,6 +199,16 @@ button {
   margin-top: 25px;
   margin-bottom: 40px;
   margin-left: 50px;
+  transform: translate(0);
+  transition: transform 0.8s ease;
+}
+
+button:active {
+  transform: translate(0, 2px);
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 form div p > a {
