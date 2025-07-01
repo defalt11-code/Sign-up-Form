@@ -200,7 +200,7 @@ button {
   margin-bottom: 40px;
   margin-left: 50px;
   transform: translate(0);
-  transition: transform 0.8s ease;
+  transition: transform 0.2s ease;
 }
 
 button:active {
@@ -216,6 +216,23 @@ form div p > a {
   font-weight: 600;
   margin-left: 5px;
   color: var(--btn-bg-clr);
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 0px;
+  background-color: #596d48;
+  height: 2px;
+  width: 100%;
+  transform: scale(0);
+  transition: transform 0.2s ease-in;
+}
+
+a:hover::after {
+  transform: scale(1);
 }
 
 form > div:last-child p {
